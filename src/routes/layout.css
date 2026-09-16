@@ -134,3 +134,15 @@ body {
 		@apply font-mono;
 	}
 }
+
+@layer utilities {
+	.section-x {
+		@apply px-6 sm:px-10 md:px-20 lg:px-36 xl:px-44;
+	}
+	.section-y {
+		@apply py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24;
+	}
+	.section-gap {
+		@apply gap-10 md:gap-16 lg:gap-24 xl:gap-28;
+	}
+}

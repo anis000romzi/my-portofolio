@@ -7,7 +7,7 @@
 
 <div
 	id="contact"
-	class="flex w-full flex-col justify-center gap-10 px-6 py-12 [box-shadow:0_0.3px_0_0_#737373] md:flex-row md:gap-16 md:px-20 md:py-12 lg:gap-24 lg:px-36 lg:py-36"
+	class="section-x section-y section-gap flex w-full flex-col justify-center [box-shadow:0_0.3px_0_0_#737373] md:flex-row"
 >
 	<p class="shrink-0 font-mono text-xs tracking-widest text-[#CC2A2A] md:text-sm">03 — CONTACT</p>
 
@@ -33,7 +33,7 @@
 			</div>
 
 			<Button
-				class="mt-5 w-6/12 cursor-pointer border-[#CC2A2A] bg-[#080808] p-5 font-mono tracking-widest text-[#CC2A2A] hover:bg-[#CC2A2A] hover:text-[#080808]"
+				class="mt-5 w-full cursor-pointer border-[#CC2A2A] bg-[#080808] p-5 font-mono tracking-widest text-[#CC2A2A] hover:bg-[#CC2A2A] hover:text-[#080808] sm:w-auto sm:min-w-56"
 				>SEND MESSAGE</Button
 			>
 		</form>

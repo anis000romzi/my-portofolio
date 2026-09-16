@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import Reveal from './Reveal.svelte';
+	import profileImage from '$lib/assets/images/profile.jpeg';
 
 	// https://icon-sets.iconify.design
 	const skills: { name: string; icon: string }[] = [
@@ -30,9 +31,16 @@
 
 <div
 	id="about"
-	class="flex w-full flex-col justify-center gap-10 px-6 py-12 [box-shadow:0_0.3px_0_0_#737373] md:flex-row md:gap-16 md:px-20 md:py-12 lg:gap-24 lg:px-36 lg:py-36"
+	class="section-x section-y section-gap flex w-full flex-col justify-center [box-shadow:0_0.3px_0_0_#737373] md:flex-row"
 >
-	<p class="shrink-0 font-mono text-xs tracking-widest text-[#CC2A2A] md:text-sm">00 — ABOUT</p>
+	<div class="flex flex-col">
+		<p class="shrink-0 font-mono text-xs tracking-widest text-[#CC2A2A] md:text-sm">00 — ABOUT</p>
+		<img
+			src={profileImage}
+			alt="Anis Romzi"
+			class="mt-5 h-72 w-40 object-cover md:mt-10 md:h-96 md:w-60"
+		/>
+	</div>
 
 	<div class="flex w-full flex-col gap-10 md:max-w-xl lg:max-w-2xl">
 		<p class="text-lg text-[#EEEEEE] md:text-2xl">
@@ -41,7 +49,7 @@
 			design sensibility.
 		</p>
 		<Reveal delay={150}>
-			<p class="text-md text-[#737373] md:text-lg">
+			<p class="text-base text-[#737373] md:text-lg">
 				Previously at Figma (infrastructure), Linear (API platform), and two companies I co-founded.
 				I care deeply about developer experience, performance, and systems that degrade gracefully.
 				When I'm not writing code I'm usually reading architecture theory or hiking somewhere

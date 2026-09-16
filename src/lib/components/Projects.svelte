@@ -43,9 +43,9 @@
 
 <div
 	id="projects"
-	class="flex flex-col gap-20 px-6 py-12 [box-shadow:0_0.3px_0_0_#737373] md:px-20 md:py-12 lg:px-36 lg:py-36"
+	class="section-x section-y flex flex-col gap-16 md:gap-20 [box-shadow:0_0.3px_0_0_#737373]"
 >
-	<div class="flex w-full flex-col justify-center gap-10 md:flex-row md:gap-16 lg:gap-24">
+	<div class="section-gap flex w-full flex-col justify-center md:flex-row">
 		<p class="shrink-0 font-mono text-xs tracking-widest text-[#CC2A2A] md:text-sm">
 			01 — PROJECTS
 		</p>
@@ -66,10 +66,18 @@
 				<Reveal>
 					<a href={resolve('/')}>
 						<div
-							class="group flex items-center justify-between gap-16 p-7 transition-colors duration-200 hover:bg-[#CC2A2A]/5"
+							class="group flex flex-col gap-4 p-5 transition-colors duration-200 hover:bg-[#CC2A2A]/5 sm:p-7 md:flex-row md:items-center md:justify-between md:gap-8 lg:gap-16"
 						>
-							<span class="font-mono text-sm text-[#363535]">{String(i + 1).padStart(2, '0')}</span>
-							<div class="flex w-6/12 flex-col gap-4">
+							<div class="flex items-center justify-between md:hidden">
+								<span class="font-mono text-sm text-[#363535]"
+									>{String(i + 1).padStart(2, '0')}</span
+								>
+								<span class="font-mono text-xs text-[#737373]">{project.year}</span>
+							</div>
+							<span class="hidden font-mono text-sm text-[#363535] md:block"
+								>{String(i + 1).padStart(2, '0')}</span
+							>
+							<div class="flex w-full flex-col gap-3 md:w-6/12 md:gap-4">
 								<p class="text-xl transition-colors duration-200 group-hover:text-[#CC2A2A]">
 									{project.title}
 								</p>
@@ -86,7 +94,7 @@
 									</div>
 								{/each}
 							</div>
-							<span class="font-mono text-xs text-[#737373]">{project.year}</span>
+							<span class="hidden font-mono text-xs text-[#737373] md:block">{project.year}</span>
 						</div>
 					</a>
 				</Reveal>

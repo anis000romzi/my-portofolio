@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="flex h-screen flex-col justify-center px-6 py-12 [box-shadow:0_0.3px_0_0_#737373] md:px-20 md:py-12 lg:px-14 lg:py-20"
+	class="section-x section-y flex h-screen flex-col justify-center [box-shadow:0_0.3px_0_0_#737373]"
 >
 	<Reveal delay={0}>
 		<p class="font-mono text-xs tracking-widest text-[#CC2A2A] md:text-sm">— FULLSTACK DEVELOPER</p>
@@ -17,7 +17,7 @@
 	</Reveal>
 	<div class="flex flex-col items-center justify-between gap-10 md:flex-row md:items-end">
 		<Reveal delay={300} class="md:w-6/12">
-			<p class="text-md text-[#737373] md:text-lg">
+			<p class="text-base text-[#737373] md:text-lg">
 				Software engineer and product designer building precise, considered digital work. Currently
 				focused on developer tooling and spatial interfaces.
 			</p>
